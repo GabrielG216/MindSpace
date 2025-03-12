@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindSpace</title>
+    <link rel="shortcut icon" href="img/logoMind.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+        <header>
+            <div>
+            <h1 class="titulo">MindSpace</h1>
+            <h2 onclick="window.location.href='index.html'" class="h2-header inicio-h2">Inicio</h2>
+            <h2 onclick="window.location.href='planos.html'" class="h2-header">Planos de ajuda</h2>
+            </div>
+            <div>
+               <p class="ola-head">Olá,</p> <b><p id="user-name" ></p></b>
+                <img onclick="window.location.href='login.html'" class="UsuarioMind" src="img/UsuarioMind.png" alt="">
+            </div>
+        </header>
+
+
+        <section class="center-section">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="img/celebro girano.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="content">
+            <h2 class="title">O que é a MindSpace?</h2>
+            <p class="description">
+                A MindSpace é uma plataforma dedicada a saúde mental, oferecendo conteúdos, 
+                dicas e suporte para aqueles que buscam uma vida mais equilibrada e saudável.
+            </p>
+            </div>
+        </section>
+
+        <p class="veja">Veja em o que ajudamos, entre outras:</p>
+
+        <section class="veja-ajudas">
+            <div class="column-veja">
+                <img class="imagens-veja" src="img/ansiedade.jpg" alt="">
+                <h2 class="h2-veja">Ansiedade</h2>
+            </div>
+            <div class="column-veja">
+                <img class="imagens-veja" src="img/bissexual.jpg" alt="">
+                <h2 class="h2-veja">Bipolaridade</h2>
+            </div>
+            <div class="column-veja">
+                <img class="imagens-veja" src="img/postrauma.jpg" alt="">
+                <h2 class="h2-veja">Transtorno Pós Traumático</h2>
+            </div>
+            <div class="column-veja">
+                <img class="imagens-veja" src="img/depressao.jpg" alt="">
+                <h2 class="h2-veja">Depressão</h2>
+            </div>
+            <div class="column-veja">
+                <img class="imagens-veja" src="img/transtornopanico.jpg" alt="">
+                <h2 class="h2-veja">Transtorno do Pânico</h2>
+            </div>
+        </section>
+
+        <section class="psiquiatras">
+            
+            <img class="img-psiquiatra" src="img/psiquiatra1.jpg" alt="">
+            <p class="p-psiquiatra">A presença de uma equipe de psiquiatras é essencial para garantir o bem-estar mental da sociedade. <br> A saúde mental é tão importante quanto a saúde física, e contar com profissionais especializados faz toda a diferença no diagnóstico, <br> tratamento e acompanhamento de transtornos psicológicos. 
+                Os psiquiatras possuem conhecimento técnico para identificar condições como ansiedade, <br> depressão, transtorno bipolar, esquizofrenia e muitas outras. <br><br> Além disso, eles ajudam os pacientes a entenderem suas emoções, encontrarem estratégias para lidar com desafios e, quando necessário, <br> recomendam tratamentos adequados, seja por meio de terapia, mudanças no estilo de vida ou medicação.
+                Ter uma equipe de psiquiatras em clínicas, <br> hospitais ou até mesmo em espaços comunitários significa oferecer suporte a quem precisa, <br> combater o estigma da saúde mental e promover uma vida mais equilibrada e saudável. <br> Afinal, cuidar da mente é um passo fundamental para uma vida plena e feliz.</p>
+        </section>
+
+        <section class="converse-ajuda">
+        <h2 class="h2-pessoal">Converse com nossa ajuda pessoal, clicando no botão a seguir:</h2>
+        <main>
+            <button id="startChat" class="Iniciar-Chat">Iniciar Chat</button>
+        </main>
+        <div id="chatContainer" class="hidden">
+            <div id="chatBox">
+                <div id="messages"></div>
+                <input type="text" id="userInput" placeholder="Digite sua mensagem...">
+                <button id="sendMessage">Enviar</button>
+            </div>
+        </div>
+        </section>
+
+        <footer class="footer">
+            <div class="column-footer">
+          <h2 class="footer-title">MindSpace</h2>
+            <div class="row-img-footer">
+           <a href="https://www.twitter.com"> <img src="img/x.png" alt=""></a>
+           <a href="https://www.instagram.com"> <img src="img/insta.png" alt=""></a>
+           <a href="https://www.facebook.com"> <img src="img/facebook.png" alt=""></a>
+            </div>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                <h2 class="footer-item">Criadores</h2>
+                <p>Esse site foi criado por alunos de Senac MG. <br> Gabriel Vitor e João Pedro</p>
+                </div>
+                <div>
+                <h2 class="footer-item">Política de Privacidade</h2>
+                <p> &copy;  Todos os direitos reservados</p>
+                </div>
+                <div>
+                <h2 class="footer-item">Contato</h2>
+                <p>(34) 9999-9999</p>
+                </div>
+                
+            </div>
+        </footer>
+
+    <script src="login.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

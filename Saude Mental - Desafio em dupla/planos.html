@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindSpace - Planos</title>
+    <link rel="shortcut icon" href="img/logoMind.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleplanos.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <header>
+        <div>
+        <h1 class="titulo">MindSpace</h1>
+        <h2 onclick="window.location.href='index.html'" class="h2-header">Inicio</h2>
+        <h2 onclick="window.location.href='planos.html'" class="h2-header planos-h2">Planos de ajuda</h2>
+        </div>
+        <div>
+            <p class="ola-head">Olá,</p> <b><p id="user-name"></p></b>
+             <img onclick="window.location.href='login.html'" class="UsuarioMind" src="img/UsuarioMind.png" alt="">
+         </div>
+    </header>
+
+    <section class="content">
+        <h2 class="title">Escolha o plano que melhor se adapta a você</h2>
+        <p class="description">
+            Oferecemos planos personalizados para que você tenha a melhor experiência na MindSpace. Conheça nossas opções e escolha a que mais combina com suas necessidades.
+        </p>
+    </section>
+
+    <section class="planos-container">
+        <div class="plano">
+            <img src="img/premium.png" alt="Coroa" class="premium">
+            <h3>Plano Premium</h3>
+            <p class="descricao-plano">
+                Acesso total a recursos exclusivos, suporte dedicado e benefícios personalizados.
+            </p>
+            <p class="preco">R$ 34,99/mês</p>
+            <button class="btn-assinar" onclick="window.location.href='assinar.html'">Assinar agora</button>
+        </div>
+
+        <div class="plano">
+            <img src="img/dima.png" alt="Diamante" class="dima">
+            <h3>Plano Pro</h3>
+            <p class="descricao-plano">
+                Acesso prioritário a conteúdos exclusivos e recursos avançados.
+            </p>
+            <p class="preco">R$ 24,99/mês</p>
+            <button class="btn-assinar" onclick="window.location.href='assinar.html'">Assinar agora</button>
+        </div>
+
+        <div class="plano">
+            <img src="img/bronze.png" alt="Bronze" class="bronze">
+            <h3>Plano Básico</h3>
+            <p class="descricao-plano">
+                Recursos essenciais para começar sua jornada de bem-estar mental.
+            </p>
+            <p class="preco">R$ 14,99/mês</p>
+            <button class="btn-assinar" onclick="window.location.href='assinar.html'">Assinar agora</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="column-footer">
+        <h2 class="footer-title">MindSpace</h2>
+        <div class="row-img-footer">
+        <img onclick="window.location.href='https:/x.com'" src="img/x.png" alt="">
+        <img onclick="window.location.href='https:/instagram.com'"  src="img/insta.png" alt="">
+        <img onclick="window.location.href='https:/facebook.com'" src="img/facebook.png" alt="">
+        </div>
+        </div>
+
+        <div class="footer-links">
+            <div>
+            <h2 class="footer-item">Criadores</h2>
+            <p>Esse site foi criado por alunos de Senac MG. <br> Gabriel Vitor e João Pedro</p>
+            </div>
+            <div>
+            <h2 class="footer-item">Política de Privacidade</h2>
+            <p> &copy;  Todos os direitos reservados</p>
+            </div>
+            <div>
+            <h2 class="footer-item">Contato</h2>
+            <p>(34) 9999-9999</p>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
