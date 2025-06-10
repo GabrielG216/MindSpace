@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: "Inconsolata", monospace;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    color: black;
+    padding: 15px 20px;
+    border-bottom: 5px solid black;
+}
+
+.UsuarioMind {
+    width: 60px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.h2-header {
+    font-size: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.h2-header:hover {
+    font-size: 17px;
+}
+
+.titulo {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.content {
+    max-width: 700px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.planos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px auto;
+    max-width: 1000px;
+    margin-bottom: 10rem;
+}
+
+.plano {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.imagem-plano {
+    width: 100%;
+    max-width: 150px; 
+    height: auto;
+    display: block; 
+    margin: 0 auto 15px auto; 
+}
+
+
+h3 {
+    font-size: 22px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.descricao-plano {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.btn-assinar {
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.planos-h2{
+    color: white;
+    text-shadow: 1px 2px 0.5px black, 2px 1px 0.5px black, -1px -2px 0.5px black, -2px -1px 0.5px black, 1px -1px 0.5px black, 2px -2px 0.5px black, -2px 2px 0.5px black, 1px -1px 0.5px black;
+}
+
+.btn-assinar:hover {
+    background-color: gray;
+}
+
+@media (max-width: 768px) {
+    .planos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: "Inconsolata", monospace;
+}
+
+
+
+.titulo {
+    font-size: 30px;
+    margin-right: 10px;
+
+}
+
+.usuario {
+    background: white;
+    color: #0077b6;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.content {
+    max-width: 700px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.center-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.video {
+    width: 350px;
+    margin-left: 300px;
+}
+
+.veja{
+    margin-top: 70px;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.veja-ajudas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.column-veja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagens-veja{
+    width: 150px;
+    height: 150px;
+    border-radius: 300px;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px black, 2px 2px 10px black, -1px -1px 10px black, -2px -2px 10px black;
+}
+
+.imagens-veja:hover{
+    width: 170px;
+    height: 170px;
+}
+
+.h2-veja{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.psiquiatras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 90px;
+    
+}
+
+
+.psiquiatras img{
+    width: 800px;
+    border-radius: 30px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 5px black, 2px 2px 5px black, -1px -1px 5px black, -2px -2px 5px black;
+}
+
+.psiquiatras p{
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+
+button {
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: black;
+}
+
+#chatContainer {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+#messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.h2-pessoal{
+    margin-left: 30px;
+}
+
+.Iniciar-Chat{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 100px;
+}
+
+.converse-ajuda{
+    margin-bottom: 7rem;
+}
+
+form{
+    margin-top: 10px;
+}
+
+strong{
+    color: gray;
+}
+
+a{
+    color: gray;
+}
+
+select {
+    padding: 5px;
+    width: 120px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-family: "Inconsolata", monospace;
+    cursor: pointer;
+}
+
+option {
+    background-color: white;
+    color: black;
+    font-family: "Inconsolata", monospace;
+}
+
+option:hover {
+    background-color: gray;
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.espaco{
+   margin-bottom: 20px;
+}
+
+.parcelamento-pagar-row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.parcelamento-pagar-row div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-pagar{
+    margin: 0;
+    margin-right: 25px;
+}
+
+@media (max-width: 768px) {
+    .center-section {
+        flex-direction: column;
+    }
+    .video {
+        margin-left: 0;
+    }
+    .veja-ajudas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .img-psiquiatra{
+        max-width: 90%;
+    }
+   
+}

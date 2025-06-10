@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindSpace - Perfil</title>
+    <link rel="shortcut icon" href="img/logoMind.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class="titulo">MindSpace</h1>
+            <h2 onclick="window.location.href='index.html'" class="h2-header">Inicio</h2>
+            <h2 onclick="window.location.href='planos.html'" class="h2-header">Planos de ajuda</h2>
+        </div>
+    </header>
+
+    <div class="profile-container">
+        <h2 class="profile-title">Editar Perfil</h2>
+        
+        <div class="profile-image-container">
+            <div class="profile-image-wrapper" onclick="document.getElementById('profileImage').click()">
+                <img id="previewImage" src="img/UsuarioMind.png" alt="Perfil">
+            </div>
+            <input type="file" id="profileImage" accept="image/*" hidden>
+            <p class="change-photo-text">Alterar foto de perfil</p>
+        </div>
+        
+        <div class="profile-form">
+            <label for="userName">Nome</label>
+            <input type="text" id="userName" class="profile-input" placeholder="Seu nome">
+            
+            <div class="profile-buttons">
+                <button class="cancel-button" onclick="window.location.href='index.html'">Cancelar</button>
+                <button class="save-button" id="saveProfile">Salvar Alterações</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>
